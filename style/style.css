@@ -405,7 +405,7 @@ form.example::after {
 
 /* img irlanda */
 .card .img-irlanda-1 {
-  background-image: url("/img/illustrazioni/irlanda/bean-nighe_hq.PNG");
+  background-image: url("img/illustrazioni/irlanda/bean-nighe_hq.PNG");
 }
 
 .card .img-irlanda-2 {
