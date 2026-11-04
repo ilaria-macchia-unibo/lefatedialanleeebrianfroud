@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Web Project Plan - Le fate di Alan Lee e Brian Froud</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Foglio di stile e Icone -->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    
+    <!-- Dublin Core Metadata -->
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+    <meta name="DC.Title" content="Le fate di Alan Lee e Brian Froud" />
+    <meta name="DC.Creator" content="Ilaria Macchia" />
+    <meta name="DC.Subject" content="Faeries, Alan Lee, Brian Froud, Illustrazioni, Tassonomia fantastica" />
+    <meta name="DC.Description" content="Un sito web contenente le 185 illustrazioni del libro 'Fate' ('Faeries' in originale) di Alan Lee e Brian Froud." />
+    <meta name="DC.Publisher" content="Github Pages" />
+    <meta name="DC.Date" content="10-2026" />
+    <meta name="DC.Type" content="InteractiveResource" />
+    <meta name="DC.Format" content="text/html" />
+    <meta name="DC.Source" content="Lee, Alan; Froud, Brian. Faeries. New York : Harry N. Abrams, Inc., 1978 (ISBN: 978-0-8109-0901-4)" />
+    <meta name="DC.Language" content="it" />
+    <meta name="DC.Rights" content="Progetto amatoriale senza scopo di lucro.">
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header">
+        <a href="index.html" title="Vai alla home">
+          <img src="img/layout/header.png" class="center responsive" alt="Piante e creature presenti nell'opera"/>
+        </a>
+      </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="topnav">
+        <a href="index.html" title="Vai alla home">Home</a>
+        <a href="list-items.html" title="Vai al catalogo delle creature">Creature</a>
+        <a href="mappa.html" title="Vai alla mappa">Mappa</a>
+        <a href="#" title="Vai al catalogo della flora">Flora</a>
+        <a href="#" title="Vai al catalogo delle tecniche e dei materiali">Tecniche</a>
+        <a href="dati.html" title="Vai alla pagina dei dati">Dati</a>
+      </div>
+    </nav>
+
+    <!-- Main Content Grid -->
+    <div class="row">
+      <!-- Left Column: Breadcrumbs e Indice Rapido -->
+      <div class="leftcolumn">
+        <div>
+          <ul class="breadcrumb">
+            <li><a href="index.html" title="Vai alla home">Home</a></li>
+            <li>Web Project Plan</li>
+          </ul>
+        </div>
+        
+        <div>
+          <p><b>Indice</b></p>
+          <a href="#idea" class="btn default" title="Vai all'Idea">1. Idea (Abstract)</a>
+          <a href="#brief" class="btn default" title="Vai al Brief">2. Brief</a>
+          <a href="#benchmark" class="btn default" title="Vai al Benchmark">3. Benchmark</a>
+          <a href="#struttura" class="btn default" title="Vai alla Struttura">4. Struttura</a>
+          <a href="#layout" class="btn default" title="Vai al Layout">5. Layout</a>
+          <a href="#usabilita" class="btn default" title="Vai all'Usabilità">6. Usabilità</a>
+          <a href="#servizi" class="btn default" title="Vai ai Servizi">7. Servizi</a>
+          <a href="#bibliografia" class="btn default" title="Vai alla Bibliografia">8. Bibliografia</a>
+        </div>
+      </div>
+
+      <!-- Right Column: Documentazione dettagliata -->
+      <div class="rightcolumn">
+        <h2>Web Project Plan</h2>
+        <!-- 0. IDEA (ABSTRACT) -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="idea">
+          <h3>1. Idea (Abstract)</h3>
+          <p>
+            Il progetto consiste nella realizzazione di una collezione digitale interattiva orientata alla catalogazione e valorizzazione delle 185 illustrazioni contenute nel volume <b><i>Faeries</i> (1978)</b> di Alan Lee e Brian Froud. L'obiettivo principale è offrire una tassonomia strutturata che metta in relazione le creature del folklore celtico e germanico con i rispettivi habitat, aree geografiche di origine, riferimenti letterari e tecniche pittoriche impiegate. La piattaforma consente un'esplorazione fluida attraverso molteplici percorsi di browsing (tabelle dinamiche, mappe interattive e filtri tematici) ed è rivolta ad appassionati di illustrazione, studenti e ricercatori. Realizzato con HTML5, CSS3 e JavaScript, il sito adotta metadati Dublin Core, descrizioni bilingue e un dataset in formato aperto scaricabile, garantendo un design responsive e accessibile per la consultazione multipiattaforma.
+          </p>
+        </div>
+
+        <!-- 1. BRIEF -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="brief">
+          <h3>2. Brief</h3>
+          <p><b>Finalità:</b> Lo scopo principale del progetto è sviluppare una risorsa digitale che funga da archivio e catalogo strutturato per la consultazione del patrimonio illustrativo del celebre volume <i>Faeries</i> (1978) di Alan Lee e Brian Froud. Si intende valorizzare l'immaginario artistico, letterario e mitologico dell'opera attraverso una tassonomia rigorosa.
+          il sito mira a catalogare in modo esaustivo tutte le 185 illustrazioni del libro, estendendo la classificazione alle sezioni dedicate alle creature leggendarie, alla flora magica e alle tecniche di disegno, offrendo così uno strumento di studio completo.</p>
+          <p><b>Pubblico di riferimento:</b></p>
+          <ul>
+            <li><b>Utenti generali e appassionati:</b> utenza attratta dall'impatto visivo e narrativo delle illustrazioni, che accede per un'esplorazione libera, geografica e tematica dei contenuti.</li>
+            <li><b>Ricercatori, illustratori e studenti:</b> utenti con esigenze informative avanzate, interessati all'analisi iconografica, al confronto filologico dei testi (bilingui) e al riuso dei dati strutturati della collezione.</li>
+          </ul>
+          <p><b>Accesso:</b> Tutti gli utenti accedono liberamente ai contenuti pubblici di base attraverso una navigazione intuitiva poiché si basa su standard consolidati: menù e breadcrumbs in posizione fissa, etichette chiare, feedback visivo costante della pagina attiva ed elementi d'interazione familiari (tab e accordion), azzerando lo sforzo cognitivo dell'utente. La comunicazione non si affida esclusivamente al testo, ma sfrutta una forte integrazione mediale che unisce descrizioni critiche bilingue (inglese e italiano), immagini ad alta risoluzione delle tavole originali e widget interattivi (mappe geografiche e tool di ingrandimento per l'analisi ravvicinata dei dettagli artistici). Il design della risorsa è progettato per essere multipiattaforma, compatibile con diversi dispositivi (PC, tablet e smartphone). Inoltre, gli utenti possono contribuire attivamente all'espansione e al miglioramento del progetto andando ad esplorare la sezione dedicata nel footer.</p>
+          <p><b>Contenuti e Dati:</b> Le risorse consultate per l'ideazione e la creazione del sito provengono principalmente dall'edizione digitalizzata liberamente consultabile online su Internet Archive, dalla versione cartacea dell'edizione italiana del libro in possesso del creatore della risorsa (<i>Fate</i>, Rizzoli, 1979), l'applicazione web Google My Maps, Wikipedia e l'OPAC SBN (Catalogo collettivo delle biblioteche del Servizio Bibliotecario Nazionale). Come contenuti nuovi creati ex novo nel progetto figurano la struttura, la codifica e l'impaginazione responsive delle pagine HTML e del foglio di stile CSS, la definizione dello schema tassonomico delle schede degli item, la creazione del dataset strutturato in formato CSV per l'ordinamento e il download dei dati, lo sviluppo delle funzionalità interattive in JavaScript (lente d'ingrandimento e tabella dei dati filtrabile) e la stesura integrale del Web Project Plan.</p>
+        </div>
+
+        <!-- 2. BENCHMARK -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="benchmark">
+          <h3>3. Benchmark</h3>
+          <p>Analisi di mercato:</p>
+          <ol>
+            <li>
+              <a href="https://fionnfolklore.org/en/" target="_blank" title="Vai a Fionn Folklore"><b>Fionn Folklore Database</b></a>: Raccolta digitale incentrata sulla catalogazione e geolocalizzazione di storie e testi della tradizione orale legate a Fionn mac Cumhaill (Finn McCool) e ai Fianna.
+              <br><b>Punti di forza:</b> Ottimo punto di riferimento per l'organizzazione territoriale del mito. 
+              <br><b>Limiti:</b> Si concentra prevalentemente sul testo d'archivio e sul racconto orale, lasciando in secondo piano la valorizzazione artistica e iconografica del dettaglio visivo.
+            </li>
+            <li>
+              <a href="https://www.blakearchive.org/" target="_blank" title="Vai a The William Blake Archive"><b>The William Blake Archive</b></a>: Archivio online gratuito e open access dedicato all'opera visiva e letteraria di William Blake.
+              <br><b>Punti di forza riusati:</b> Eccelle nella fedeltà filologica, nella qualità ad alta risoluzione delle immagini e nell'accostamento tra opera visiva e apparato critico.
+              <br><b>Limiti:</b> Presenta un interfaccia dispersiva che richiede uno sforzo maggiore all'utente.
+            </li>
+          </ol>
+        </div>
+
+        <!-- 3. STRUTTURA -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="struttura">
+          <h3>4. Struttura</h3>
+          <p><b>Mappa concettuale:</b> <img src="img/schemi/mappa_concettuale.jpeg" alt="Mappa concettuale del progetto" title="Mappa concettuale del progetto" class="img-constrained"></p>
+          <p>
+            Il progetto si articola su due pilastri concettuali principali:
+          </p>
+          <ul>
+            <li>
+              <b>Le fonti editoriali e l'impianto artistico:</b> Il progetto si basa sulle fonti bibliografiche ufficiali, ovvero l'edizione originale del libro <i>Faeries</i> (1978) e la sua prima traduzione italiana <i>Fate</i> (1979). Da queste opere sono estratte le 185 illustrazioni realizzate da <b>Alan Lee</b> e <b>Brian Froud</b>, di cui si intende valorizzare la componente stilistica e documentale.
+            </li>
+            <li>
+              <b>La tassonomia e le modalità di organizzazione delle immagini:</b> Le illustrazioni estratte dalle fonti sono state suddivise in due grandi macro-categorie rappresentative: <b>creature</b> e <b>flora</b> (piante, fiori, alberi e funghi).
+            </li>
+          </ul>
+          <p>
+            Per consentire una fruizione fluida e strutturata, sia le creature sia la flora vengono riclassificate e organizzate attraverso <b>4 parametri</b>:
+          </p>
+          <ul>
+            <li><b>Tipologia (caratteristiche):</b> classificazione in base alle peculiarità fisiche e/o comportamentali.</li>
+            <li><b>Area geografica (luoghi):</b> ripartizione territoriale basata sui luoghi d'origine della tradizione folklorica (Irlanda, Scozia, Galles, Inghilterra, Germania, Isola di Man).</li>
+            <li><b>Habitat (ambiente, contesto):</b> organizzazione in base agli ambienti e al contesto (silvano, acquatico/marino, sottosuolo, notturno, domestico, ecc.).</li>
+            <li><b>Tecnica e materiale:</b> criterio focalizzato sulla componente artistica e pratica del disegno, ripartito secondo gli strumenti impiegati dagli autori (matita, inchiostro, acquerello, carboncino, ecc.).</li>
+          </ul>
+          <p><b>Schema delle dipendenze:</b><img src="img/schemi/schema_dipendenze.jpeg" alt="Schema albero delle dipendenze" title="Schema albero delle dipendenze" class="img-constrained"></p>
+          <p>Nella <b>homepage</b> è possibile accedere al sistema di navigazione principale prima di tutto tramite la <b>top navbar</b>, oltre che alla <b>metanavigazione</b> (sempre presente nel footer) e ai <b>contenuti aggiuntivi</b>.</p>
+          <p>Nella top navbar della homepage sono collocati:</p>
+          <ul>
+            <li><b>Home:</b> pagina principale corredata da un hero banner di presentazione, un'introduzione generale al progetto e un pulsante "Scopri di più" che rimanda a un link esterno (la pagina Wikipedia dedicata all'opera <i>Faeries</i>);</li>
+            <li><b>Creature, Flora e Tecniche:</b> collegamenti che rimandano rispettivamente ai cataloghi generali delle creature, della flora e delle tecniche e materiali utilizzati per le illustrazioni;</li>
+            <li><b>Mappa:</b> voce che indirizza alla mappa geografica interattiva per visualizzare la distribuzione territoriale dei luoghi associati a creature e flora;</li>
+            <li><b>Dati:</b> pagina da cui si accede direttamente alla tabella interattiva ordinabile e ai collegamenti per il download del dataset in formato CSV.</li>
+          </ul>
+          <p>Sempre all'interno della homepage, l'utente può accedere a tutte le pagine dei <b>cataloghi</b> (Creature, Flora, Tecniche) e alla pagina della mappa tramite <b>accordion</b>.</p>
+          <p>Ogni catalogo specifico (Creature, Flora, Tecniche) offre un sistema di consultazione <b>filtrabile</b> secondo i seguenti criteri:</p>
+          <ul>
+            <li>Luogo</li>
+            <li>Tipologia</li>
+            <li>Habitat</li>
+            <li>Ordine Alfabetico (A-Z)</li>
+            <li>Riferimenti letterari</li>
+          </ul>
+          <p>Nel <b>footer</b> è invece collocata la metanavigazione, da cui è possibile accedere alle informazioni generali e di documentazione del sito, tra cui i <b>Credits</b>, le <b>Licenze</b>, la voce <b>Contribuisci</b>, i <b>Diritti</b>, il <b>Web Project Plan</b>.</p>
+          <p>Dai diversi cataloghi si accede infine alla pagina di ciascun <b>item</b>, dove ogni oggetto digitale è descritto mediante metadati e corredato dal <b>tool di ingrandimento (magnifier glass)</b>. All'interno di ciascuna scheda item sono inoltre presenti:</p>
+          <ul>
+            <li>Link esterni di approfondimento dedicati alla specifica entità trattata;</li>
+            <li>Link esterni di approfondimento sugli autori (Alan Lee e Brian Froud);</li>
+            <li>Rimandi a risorse bibliotecarie e archivi digitali per la consultazione diretta delle varie edizioni dell'opera, siano esse cartacee o digitalizzate.
+          </ul>
+          <p><b>Categorie descrittive:</b></p>
+          <ul>
+            <li><b>ID Item:</b> identificativo numerico univoco dell'oggetto</li>
+            <li><b>Titolo originale:</b> titolo in originale inglese dell'oggetto</li>
+            <li><b>Titolo italiano:</b> titolo dell'oggetto nella traduzione italiana dell'opera edita da Rizzoli, 1979</li>
+            <li><b>Autore 1:</b> autore principale dell'illustrazione</li>
+            <li><b>Autore 2:</b> autore secondario dell'illustrazione</li>
+            <li><b>Tipologia:</b> caratteristiche comuni a un gruppo di altri oggetti</li>
+            <li><b>Habitat:</b> ambiente e/o contesto comune a un gruppo di oggetti</li>
+            <li><b>Area geografica:</b> luogo (area geografica e/o località specifica) comune a un gruppo di oggetti</li>
+            <li><b>Località:</b> Non specificata</li>
+            <li><b>Tecnica / materiale:</b> tecniche pittoriche e materiali comuni a un gruppo di oggetti</li>
+            <li><b>Data di pubblicazione:</b> data della prima pubblicazione in lingua originale inglese</li>
+            <li><b>Editore principale:</b> editore della prima pubblicazione in lingua originale inglese</li>
+            <li><b>Luogo di pubblicazione (Editore principale):</b> luogo di pubblicazione della prima pubblicazione in lingua originale inglese</li>
+            <li><b>Altri editori:</b> editori secondari di successive edizioni</li>
+            <li><b>Luogo di pubblicazione (Altri editori):</b> luoghi di pubblicazione secondari di successive edizioni</li>
+            <li><b>Codice ISBN (HC):</b> codice numerico internazionale dell'edizione con copertina rigida</li>
+            <li><b>Codice ISBN (PB):</b> codice numerico internazionale dell'ediizione brossurata o tascabile</li>
+            <li><b>Supporto:</b> supporto fisico in cui si trovano le illustrazioni</li>
+            <li><b>Provider:</b> fornitore di accesso al contenuto dell'opera</li>
+            <li><b>Riferimento letterario associato:</b> citazioni o titoli di testi letterari associati all'oggetto</li>
+            <li><b>Descrizione Originale:</b> testo in originale inglese associato all'oggetto all'interno dell'opera</li>
+            <li><b>Descrizione Italiana:</b> testo associato all'oggetto all'interno dell'opera tradotto in italiano da Gaspare Bona nell'edizione Rizzoli del 1979</li>
+          </ul>
+        </div>
+
+        <!-- 4. LAYOUT -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="layout">
+          <h3>5. Layout</h3>
+          <p><b>Wireframe index:</b> <img src="img/schemi/wireframe_index.jpeg" alt="Wireframe home" title="Wireframe homepage" class="img-constrained"></p>
+          <!-- Descrizione strutturata del wireframe homepage -->
+          <p>
+            Nella homepage è possibile trovare l'<b>header</b> che contiene l'immagine testata del sito e in essa il titolo, con sotto la <b>top navbar</b>, dalla quale si può accedere alla pagina Home (segnata come attiva), Creature, Mappa, Flora, Tecniche e Dati. Sono presenti poi l'hero image (con il titolo, la descrizione e il bottone <i>"Scopri di più"</i> che funge da collegamento esterno alla pagina Wikipedia dell'opera) e le sezioni logiche del contenuto:
+          </p>
+          <ul>
+            <li>la prima, immediatamente sotto la top navbar, presenta brevemente il progetto e la genesi della raccolta illustrata di <i>Faeries</i> (1978);</li>
+            <li>la seconda sezione contiene un blocco interattivo a scomparsa (<b>accordion</b>) suddiviso in categorie logiche (Creature, Mappa, Flora, Tecniche), che consente all'utente di selezionare l'area di interesse e accedere direttamente ai relativi cataloghi o strumenti di navigazione;</li>
+            <li>l'ultima parte è costituita dal <b>footer</b>, diviso in fasce: la prima contiene la sezione della metanavigazione (Credits, Licenze, Web Project Plan e Contribuisci), mentre la seconda riporta il copyright, le note legali e la dichiarazione di assenza di scopi di lucro del progetto amatoriale.</li>
+          </ul>
+          <p><b>Wireframe catalogo:</b> <img src="img/schemi/wireframe_catalogo.jpeg" alt="Wireframe catalogo" title="Wireframe catalogo" class="img-constrained"></p>
+          <p>
+            Nel catalogo, sia esso delle creature, della flora o delle tecniche di disegno, è sempre presente l'header con l'immagine testata e la top navbar, che permette di accedere alla home, alle altre pagine di catalogo, alla pagina della mappa e alla pagina dei dati. Nella colonna di sinistra sono posizionate le <b>breadcrumbs</b> e il blocco dei filtri per l'ordinamento (per luogo geografico, tipologia, habitat, ordine alfabetico e riferimenti letterari). Nella colonna di destra si trova il corpo principale, introdotto dal titolo della sezione, e un sistema di navigazione a schede (<b>tab</b>) per esplorare i contenuti suddivisi per area geografica, ciascuna dotata di una barra di ricerca interna e di una griglia di <b>card</b> descrittive con i dettagli degli item e la paginazione. In fondo alla pagina si trova il footer comune a tutto il sito
+          </p>
+          <p><b>Wireframe item:</b><img src="img/schemi/wireframe_item.jpeg" alt="Wireframe item" title="Wireframe item" class="img-constrained"></p>
+          <p>
+            Nella pagina del singolo item, la struttura dell'header, della top navbar e del footer risulta perfettamente identica a quella descritta per la homepage e le pagine di catalogo. La pagina adotta un layout asimmetrico a due colonne:
+          </p>
+          <ul>
+            <li><b>Colonna di sinistra:</b> ospita le <b>breadcrumbs</b> di navigazione contestuale e i blocchi di approfondimento esterno con pulsanti dedicati alla creatura (link a Wikipedia), agli autori (Brian Froud e Alan Lee) e alla consultazione bibliotecaria (collegamenti a Internet Archive e ai cataloghi SBN).</li>
+            <li><b>Colonna di destra:</b> costituisce il corpo principale e accoglie il nome dell'item, l'immagine ad alta risoluzione integrata con il tool di ingrandimento, la scheda dei metadati strutturati secondo lo standard Dublin Core e il blocco della descrizione bilingue (testo originale in inglese e traduzione italiana di Gaspare Bona).</li>
+          </ul>
+          <p><b>Wireframe mappa:</b><img src="img/schemi/wireframe_mappa.jpeg" alt="Wireframe mappa" title="Wireframe mappa" class="img-constrained"></p>
+          <p>
+            Nella pagina della mappa geografica, la struttura dell'header, della top navbar e del footer risulta perfettamente identica a quella delle altre pagine del sito. La pagina adotta un <b>layout monocolonna a tutta larghezza</b> per massimizzare lo spazio visivo dei contenuti interattivi:
+          </p>
+          <ul>
+            <li><b>Sezione superiore:</b> ospita le breadcrumbs di navigazione contestuale.</li>
+            <li><b>Corpo principale:</b> presenta il titolo della sezione, una breve descrizione introduttiva che invita all'esplorazione della distribuzione territoriale degli item, e un blocco dedicato alla mappa interattiva.</li>
+          </ul>
+          <p><b>Wireframe dati:</b><img src="img/schemi/wireframe_dati.jpeg" alt="Wireframe dati" title="Wireframe dati" class="img-constrained"></p>
+          <ul>
+            <p>
+            Nella pagina dei dati, la struttura dell'header, della top navbar e del footer risulta identica a quella delle altre pagine del sito. La pagina adotta un layout monocolonna a tutta larghezza per ottimizzare la visualizzazione e l'interazione con le tabelle di dati:
+          </p>
+          <ul>
+            <li><b>Sezione superiore:</b> ospita le breadcrumbs di navigazione contestuale.</li>
+            <li><b>Corpo principale:</b> presenta il titolo della sezione ("Dataset della collezione"), una descrizione introduttiva sulle modalità di consultazione e ordinamento dei record, il pulsante interattivo per il download del dataset in formato aperto (CSV), e infine il blocco della tabella interattiva ordinabile, strutturata con colonne dedicate a ID, nome dell'item, tipologia, habitat, area geografica e tecniche/materiali.</li>
+          </ul>
+        </div>
+
+        <!-- 5. USABILITÀ -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="usabilita">
+          <h3>6. Usabilità</h3>
+          <ul>
+            <li>
+              <b>Architettura:</b> Il sito utilizza come strumento di navigazione principale la <b>top navbar</b>, sempre visibile in ogni pagina, e il <b>footer</b> per la metanavigazione. La homepage divide i contenuti in fasce orizzontali e blocchi tematici con titoli finalizzati a chiarire immediatamente il tema della sezione visualizzata dall’utente. <br>Nelle pagine di navigazione secondaria appaiono le <b>breadcrumbs</b> sotto forma di link attivi, che permettono all’utente di orientarsi nell’architettura gerarchica del sito e di tornare facilmente indietro. Nelle sezioni di catalogo che contengono gli item, l'esplorazione è supportata da sistemi di filtraggio, oltre alla <b>pagination</b> per scorrere agilmente tra i risultati. In queste pagine i filtri si trovano sempre sul lato sinistro dello schermo, in modo da presentare all’utente un’architettura coerente e riconoscibile. Nella pagina del singolo item sono collocati in evidenza l'immagine dell'item, i metadati strutturati, il tool di ingrandimento per l'analisi ravvicinata e rimandi a risorse correlate e di approfondimento.
+            </li>
+            <li>
+              <b>Aspetto e tipografia:</b> Il sito è organizzato in modo da non affollare lo schermo con un numero eccessivo di elementi, lasciando invece ampio respiro alle immagini e alle tavole illustrate, sfruttando griglie di <b>card</b> e sezioni pulite. <br>Gli elementi interattivi e i link offrono sempre un chiaro feedback visivo: i pulsanti della <b>top navbar</b> e dei menù cambiano colore al passaggio del cursore, e la voce di pagina attiva presenta una differenziazione cromatica per segnalare immediatamente la posizione dell'utente all'interno del sito. I menù di navigazione principali sono fissi, in modo che l'utente non li perda mai di vista durante lo scorrimento della pagina. I link esterni dispongono dell'attributo <b>title</b> per anticipare la destinazione, mentre tutte le immagini sono dotate di descrizioni alternative tramite l'attributo <b>alt</b>.
+            </li>
+            <li>
+              <b>Colori, icone e font:</b> La palette cromatica riprende l'atmosfera del volume cartaceo: uno sfondo <b>color carta pergamena</b> per ridurre l'affaticamento visivo, un <b>seppia scuro</b> per il testo e gli elementi primari per garantire un contrasto ottimale e una perfetta leggibilità, e tonalità di <b>verde salvia</b> per gli stati attivi. L'interfaccia integra icone intuitive della libreria <i>Font Awesome</i> per le funzioni di interazione e download. Per la tipografia è stato scelto il font sans-serif <i>Lato</i> (importato tramite Google Fonts) per il corpo del testo, garantendo un'elevata leggibilità a schermo, mentre i titoli si distinguono per peso e gerarchia. Il font scelto è corredato di <b>fallback fonts</b> per assicurare la corretta visualizzazione in ogni condizione.
+            </li>
+          </ul>
+        </div>
+
+        <!-- 6. SERVIZI -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="servizi">
+          <h3>7. Servizi</h3>
+          <ul>
+            <li>
+              <p><b>Sistemi di browsing:</b></p>
+              <ul>
+                <li><b>Sticky Navbar:</b> presente in tutto il sito per garantire un orientamento costante all'utente durante lo scorrimento delle pagine.</li>
+                <li><b>Breadcrumbs</b></li>
+                <li><b>Faccette:</b> possibilità di filtrare il catalogo per area geografica, tipologia, habitat, ordine alfabetico e riferimenti letterari.</li>
+                <li><b>Mappa:</b> mappa geografica interattiva incorporata via Google Maps per localizzare nello spazio i singoli item.</li>
+                <li><b>Pagination</b>: esplorazione organizzata tramite sistema di paginazione numerata nei cataloghi.</li>
+              </ul>
+            </li>
+
+            <li>
+              <p><b>Utilities e tool di interazione:</b>
+              <ol>
+                <li><b>Bottoni:</b> pulsanti interattivi utilizzati in tutto il sito (nella top navbar, nelle card dei cataloghi, per i link di approfondimento e per il pulsante di download del dataset CSV) e che cambiano di stato al passaggio del mouse.</li>
+                <li><b>Accordion:</b> integrato nella sezione "Esplora la raccolta" della homepage per mostrare o nascondere dinamicamente le introduzioni alle pagine dei cataloghi.</li>
+                <li><b>Tabs:</b> utilizzate nelle pagine di catalogo</li>
+                <li><b>Magnifier:</b> effetto lente d'ingrandimento utilizzata nella pagina dei singoli item per permettere l'analisi dettagliata del tratto artistico e dei particolari pittorici.</li>
+              </ol>
+            </li>
+
+            <li>
+              <p><b>Altri strumenti per la valorizzazione dell'accesso utente:</b></p>
+              <ul>
+                <li><b>Download del dataset CSV:</b> presenza di un pulsante dedicato, nella pagina dei dati, per lo scaricamento diretto dell'intero dataset in formato aperto (CSV), favorendo il riuso dei dati.</li>
+                <li><b>Box di approfondimento:</b> pulsanti che rimandano a link esterni e che collegano ogni item alla relativa scheda Wikipedia, sulle pagine biografiche degli autori (Alan Lee e Brian Froud), alla risorsa digitalizzata su Internet Archive e al catalogo ISBN delle biblioteche nazionali per la consultazione delle edizioni cartacee.</li>
+                <li>Si potrebbe inoltre integrare uno strumento <b>tag cloud</b> per ottenere una rappresentazione visiva dei termini più frequenti estratti dalle descrizioni e dai metadati, utile per un accesso intuitivo basato sulla ricorrenza delle parole.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 7. BIBLIOGRAFIA E SITOGRAFIA -->
+        <div class="border-section pd-12 bg-white wpp-section-margin" id="bibliografia">
+          <h3>8. Bibliografia</h3>
+          
+          <p><b>Fonti Primarie:</b></p>
+          <ul>
+            <li>Lee, Alan; Froud, Brian. <i>Faeries</i>. New York: Harry N. Abrams, Inc., 1978. ISBN: 978-0-8109-0901-4. (Edizione originale di riferimento per testi, illustrazioni e concept, consultabile digitalmente su <a href="https://archive.org/details/faeries0000bria/page/n118/mode/1up" target="_blank" title="Visualizza su Internet Archive">Internet Archive</a>).</li>
+            <li>Lee, Alan; Froud, Brian. <i>Fate</i>. Traduzione di Gaspare Bona. Milano: Rizzoli, 1979. (Edizione italiana di riferimento per il riscontro dei testi tradotti).</li>
+          </ul>
+
+          <p><b>Sitografia, strumenti per lo sviluppo e tools:</b></p>
+          <ul>
+            <li><b>Internet Archive:</b> archivio digitale per il reperimento e la consultazione delle tavole e dei testi originali (immagini acquisite con screenshots) (<a href="https://archive.org/details/faeries0000bria/page/n118/mode/1up" target="_blank" title="Visualizza su Internet Archive">https://archive.org/details/faeries0000bria/page/n118/mode/1up</a>).</li>
+            <li><b>Google My Maps:</b> strumento impiegato per la creazione della mappa geografica interattiva (<a href="https://www.google.com/intl/it/maps/about/mymaps/" target="_blank" title="Vai a Google My Maps">https://www.google.com/intl/it/maps/about/mymaps/</a>).</li>
+            <li><b>Canva:</b> modifica immagini (items e immagine header) (<a href="https://www.canva.com/" target="_blank" title="Vai a Canva">https://www.canva.com/</a>).</li>
+            <li><b>Clipdrop, Pixelcut e Remove.bg:</b> modifica immagini (items e immagine header) (<a href="https://clipdrop.co/cleanup" target="_blank">Clipdrop Cleanup</a>; <a href="https://www.pixelcut.ai/it/t/magic-eraser" target="_blank">Pixelcut Magic Eraser</a>; <a href="https://www.remove.bg/it" target="_blank">Remove.bg</a>).</li>
+            <li><b>W3Schools (How To e Tutorials):</b> guide di riferimento per l'implementazione dei componenti in HTML, CSS e JavaScript, tra cui Accordion, Tabs, Magnifier e Tabella (<a href="https://www.w3schools.com/howto/default.asp" target="_blank" title="Vai alle guide W3Schools HowTo">https://www.w3schools.com/howto/default.asp</a>).</li>
+            <li><b>Sublime Text:</b> Editor di testo avanzato utilizzato per la scrittura e la formattazione del codice sorgente (HTML5, CSS3, JS).</li>
+            <li><b>Google Fonts e Font Awesome:</b> librerie esterne per la tipografia (font <i>Lato</i>) e la gestione delle icone dell'interfaccia.</li>
+            <li><b>Gemini:</b> assistente di intelligenza artificiale impiegato come supporto collaborativo nella stesura dei contenuti e della documentazione del Web Project Plan.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer">
+        <p><a href="#" title="Credits">Credits</a> | <a href="#" title="Licenze">Licenze</a> | <a href="wpp.html" title="Piano di progetto">Web Project Plan</a> | <a href="#" title="Contribuisci">Contribuisci</a></p>
+      </div>
+      <div class="copyright">
+        <p>Tutti i diritti sui contenuti di questo sito (nomi, immagini, testi ed altro) sono di proprietà dei rispettivi autori e/o case editrici, sotto la tutela delle leggi internazionali sul copyright/trademark.
+        Questo progetto è totalmente privo di scopi di lucro da parte dell'autore. Lo scopo è puramente amatoriale e perciò non è assolutamente affiliato o dipendente da alcun editore.</p>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
